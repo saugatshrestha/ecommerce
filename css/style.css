@@ -1,0 +1,343 @@
+/* 
+    Theme Name: Vajratraders Ecommerce
+    Version: 1.0
+    Description: This is an ecommerce website
+    Author: Prasun Shakya
+    Designer / Dev : Saugat Shrestha
+    Tags: header, footer, section, figure, figcaption
+*/
+
+
+/*=============================
+LINKING FONT FAMILY
+=============================*/
+
+@font-face {
+    font-family: 'fontsemibold';
+    src: url('../fonts/HindSiliguri-SemiBold.woff2') format('woff2'),
+        url('../fonts/HindSiliguri-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fontbold';
+    src: url('../fonts/HindSiliguri-Bold.woff2') format('woff2'),
+        url('../fonts/HindSiliguri-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fontmedium';
+    src: url('../fonts/HindSiliguri-Medium.woff2') format('woff2'),
+        url('../fonts/HindSiliguri-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fontregular';
+    src: url('../fonts/HindSiliguri-Regular.woff2') format('woff2'),
+        url('../fonts/HindSiliguri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fontlight';
+    src: url('../fonts/HindSiliguri-Light.woff2') format('woff2'),
+        url('../fonts/HindSiliguri-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+/*=============================
+RESET CSS
+=============================*/
+
+body {
+    font-family: 'fontlight';
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-family: 'fontbold';
+    margin: 0;
+}
+
+h1 {
+    
+}
+
+h2 {
+    
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+ul,
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #404042;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+p {
+    margin: 0;
+    font-family: 'fontlight';
+}
+
+img {
+    max-width: 100%;
+}
+
+.thumbnail-img {
+    position: relative;
+    overflow: hidden;
+}
+
+i {
+    font-family: 'FontAwesome';
+}
+
+figure {
+    margin: 0;
+}
+
+
+/*===========================
+TOP HEADER CSS
+===========================*/
+
+.topheader {
+    background: #404041;
+}
+
+.topheader-left {
+    margin: 9px 0 0;
+}
+
+.topheader-left ul li {
+    color: #d4c0cd;
+    font-size: 15px;
+    font-family: 'fontlight';
+}
+
+.topheader-left ul li i {
+    margin-right: 7px;
+}
+
+.topheader-left ul li a {
+    color: #d99a22;
+    font-family: 'fontbold';
+}
+
+.social-icons ul {
+    float: right;
+}
+
+.social-icons ul li:first-of-type {
+    border-left: 1px solid #6a6a6f;
+}
+
+.social-icons ul li {
+    display: inline-block;
+    vertical-align: middle;
+    border-right: 1px solid #6a6a6f;
+}
+
+.social-icons ul li a {
+    display: block;
+    color: #d4c0cd;
+    padding: 7px 15px;
+}
+
+.social-icons ul li a:hover {
+    color: #fff;
+}
+
+
+/*===========================
+SITE HEADER CSS
+===========================*/
+
+.site-header {
+    padding: 15px 0;
+}
+
+.site-logo > a {
+    display: block;
+}
+
+.site-logo > a .thumbnail-img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 80px;
+}
+
+.site-logo > a h4 {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 80px;
+    margin-left: 5px;
+}
+
+.header-right {
+    text-align: right;
+}
+
+.site-navigation {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.site-navigation ul {
+    margin: 30px 0 0;
+}
+
+.site-navigation ul li {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30px;
+}
+
+.site-navigation ul li:last-child {
+    margin-right: 0px;
+}
+
+.site-navigation ul li a {
+    display: block;
+    font-family: 'fontmedium';
+    font-size: 17px;
+}
+
+.site-navigation ul li.current-menu-item a,
+.site-navigation ul li a:hover {
+    color: #d99a22;
+}
+
+.calltoaction {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 30px;
+    padding-left: 20px;
+}
+
+.calltoaction ul {
+    margin: 20px 0 0;
+}
+
+.calltoaction ul li {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 35px;
+}
+
+.calltoaction ul li a {
+    display: block;
+    position: relative;
+    font-size: 20px;
+}
+
+.calltoaction ul li:last-of-type {
+    margin-right: 0px;
+}
+
+.calltoaction ul li.isCart a span {
+    position: absolute;
+    top: -12px;
+    right: -18px;
+    background: #d99a22;
+    color: #fff;
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+
+/*===========================
+COLUMN BLOCK CSS
+===========================*/
+
+.columnblock {
+    padding: 60px 0;
+}
+
+.columnblock .block {
+    position: relative;
+    padding-left: 85px;
+}
+
+.columnblock .block::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 50px;
+    height: 50px;
+    width: 1px;
+    background: #e2d1d1;
+}
+
+.columnblock .block .thumbnail-img {
+    position: absolute;
+    top: -8px;
+    left: 0;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+}
+
+.columnblock .block .thumbnail-img img {
+    width: 100%;
+}
+
+.columnblock .block h4 {
+    font-family: 'fontmedium';
+    font-size: 20px;
+}
+
+.columnblock .block p {
+    font-size: 14px;
+    color: #796d6d;
+}
+
+.columnblock .block.noafter::after {
+    display: none;
+}
