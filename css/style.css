@@ -69,32 +69,32 @@ h4,
 h5,
 h6 {
     font-weight: normal;
-    font-family: 'fontbold';
+    font-family: 'fontsemibold';
     margin: 0;
 }
 
 h1 {
-    
+    font-size: 32px;
 }
 
 h2 {
-    
+    font-size: 28px;
 }
 
 h3 {
-
+    font-size: 26px;
 }
 
 h4 {
-
+    font-size: 20px;
 }
 
 h5 {
-
+    font-size: 18px;
 }
 
 h6 {
-
+    font-size: 16px;
 }
 
 ul,
@@ -115,6 +115,10 @@ a:hover {
    text-decoration: none;
 }
 
+.btn:focus {
+    box-shadow: none;
+}
+
 p {
     margin: 0;
     font-family: 'fontlight';
@@ -129,12 +133,62 @@ img {
     overflow: hidden;
 }
 
+.thumbnail-img img {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+}
+
 i {
     font-family: 'FontAwesome';
 }
 
 figure {
     margin: 0;
+}
+
+.section-title {
+    text-align: center;
+    position: relative;
+    padding: 15px;
+    margin: 0 0 50px;
+}
+
+.section-title h2 {
+    color: #404041;
+}
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    background: #404041;
+    width: 60px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+}
+
+.site-btn {
+    background: #2a2a2d;
+    color: #fff;
+    padding: 8px 24px;
+    border-radius: 0px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+}
+
+.site-btn:hover {
+    color: #fff;
+    background: #000;
+}
+
+.btnWrapper {
+    margin: 30px 0 0;
+    text-align: center;
 }
 
 
@@ -298,6 +352,7 @@ COLUMN BLOCK CSS
 
 .columnblock {
     padding: 60px 0;
+    border-bottom: 1px solid #f5f3f3;
 }
 
 .columnblock .block {
@@ -330,7 +385,6 @@ COLUMN BLOCK CSS
 
 .columnblock .block h4 {
     font-family: 'fontmedium';
-    font-size: 20px;
 }
 
 .columnblock .block p {
@@ -341,3 +395,266 @@ COLUMN BLOCK CSS
 .columnblock .block.noafter::after {
     display: none;
 }
+
+
+/*===========================
+SECTION HOME CATEGORY CSS
+===========================*/
+
+.home-category {
+    padding: 40px 0 60px;
+}
+
+.product-block > a {
+    display: block;
+}
+
+.product-block > a .thumbnail-img {
+    background: #f2f2f2;
+    margin: 0 0 15px;
+}
+
+.product-block h5 {
+    font-family: 'fontmedium';
+}
+
+.product-block > a:hover .thumbnail-img img {
+    transform: scale(1.2,1.2);
+    -webkit-transform: scale(1.2,1.2);
+    -moz-transform: scale(1.2,1.2);
+    opacity: 0.8;
+}
+
+
+/*===========================
+SECTION HOME FEATURED CSS
+===========================*/
+
+.home-featured {
+    padding: 60px 0;
+    background: #f7f4f4;
+}
+
+.reviewstar {
+    display: block;
+    color: #d99a22;
+    font-size: 14px;
+    margin: 0 0 5px;
+}
+
+.price {
+    margin: 5px 0 0;
+}
+
+.home-featured .product-block {
+    margin: 0 0 30px;
+}
+
+.product-block > a .thumbnail-img .productaction {
+    position: absolute;
+    top: 10px;
+    right: -40px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+}
+
+.product-block > a:hover .thumbnail-img .productaction {
+    right: 10px;
+}
+
+.productaction ul li {
+    margin: 0 0 7px;
+}
+
+.productaction ul li button {
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    color: #fff;
+    background: #d99a22;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+}
+
+.productaction ul li button:focus {
+    outline: 0;
+}
+
+.productaction ul li button:hover {
+    background: #ab791a;
+}
+
+
+/*===========================
+SECTION HOME PARALLAX CSS
+===========================*/
+
+.home-parallax {
+    background: url('../images/parallax-bg.jpg')no-repeat center center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    position: relative;
+}
+
+.home-parallax::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.2);
+}
+
+.parallax-content {
+    color: #fff;
+}
+
+.parallax-content h4 {
+    font-size: 60px;
+    margin: 0 0 10px;
+    color: #d99a22;
+}
+
+.parallax-content h5 {
+    margin: 0 0 20px;
+    font-size: 26px;
+    font-family: 'fontmedium';
+}
+
+.parallax-content p {
+    line-height: 24px;
+}
+
+.home-parallax .site-btn {
+    background: #fff;
+    color: #2a2a2d;
+    margin: 30px 0 0;
+    font-family: 'fontmedium';
+}
+
+
+/*===========================
+SECTION HOME BLOG CSS
+===========================*/
+
+.home-blog {
+    padding: 60px 0;
+}
+
+.blogblock .thumbnail-img {
+    margin: 0 0 15px;
+}
+
+.blogblock .thumbnail-img img {
+    width: 100%;
+}
+
+.blogblock h4 {
+    font-family: 'fontmedium';
+    margin: 0 0 5px;
+}
+
+p.postdate {
+    font-size: 13px;
+    margin: 0 0 10px;
+    color: #999;
+    font-family: 'fontlight';
+}
+
+p.postdate i {
+    margin-right: 3px;
+}
+
+.blogblock p {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'fontregular';
+}
+
+.blogblock:hover .thumbnail-img img {
+    transform: scale(1.2,1.2);
+    -webkit-transform: scale(1.2,1.2);
+    -moz-transform: scale(1.2,1.2);
+}
+
+
+/*===========================
+SITE FOOTER CSS
+===========================*/
+
+.site-footer {
+    background: #191717;
+    padding: 50px 0;
+}
+
+.footer-block h4 {
+    color: #fff;
+    font-family: 'fontmedium';
+    margin: 0 0 15px;
+    font-size: 22px;
+}
+
+.footer-block p {
+    color: #fff;
+    line-height: 22px;
+    font-size: 15px;
+    color: #827979;
+}
+
+.padr40 {
+    padding-right: 40px;
+}
+
+.footer-block.hasmenu ul li {
+    margin: 0 0 5px;
+}
+
+.footer-block.hasmenu ul li a {
+    display: block;
+    color: #827979;
+    font-size: 15px;
+}
+
+.footer-block.hasmenu ul li a:hover {
+    color: #fff;
+}
+
+.footer-block.contact ul li {
+    color: #827979;
+    position: relative;
+    padding-left: 25px;
+    margin: 0 0 5px;
+}
+
+.footer-block.contact ul li i {
+    position: absolute;
+    top: 3px;
+    left: 0;
+}
+
+.site-footer .social-icons {
+    margin: 30px 0 0;
+}
+
+.site-footer .social-icons ul {
+    float: none;
+}
+
+.site-footer .social-icons ul li {
+    border: none;
+    margin-right: 10px;
+}
+
+.site-footer .social-icons ul li a {
+    padding: 0;
+    font-size: 19px;
+    color: #8e8089;
+}
+
